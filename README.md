@@ -19,6 +19,22 @@ Skills are markdown instruction files (`SKILL.md`) that you add to a [Claude Pro
 | **paper-reader** | Produces a structured reading guide for an academic paper, tied to the course context | Reading guide in chat |
 | **study-session** | Orchestrates the other skills in the right order based on where the learner is in their weekly study cycle | Coaching workflow in chat |
 
+## Installation
+
+Install via the Jacquard Labs marketplace:
+
+```bash
+/plugin marketplace add jacquardlabs/marketplace
+/plugin install study-skills@jacquardlabs-marketplace
+```
+
+Or install this plugin directly:
+
+```bash
+/plugin marketplace add jacquardlabs/study-skills
+/plugin install study-skills@study-skills
+```
+
 ## The study cycle
 
 The `study-session` skill coordinates everything into a 5-phase cycle:
