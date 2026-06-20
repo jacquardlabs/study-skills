@@ -1,10 +1,10 @@
 # Study Skills for Claude Projects
 
-A set of 8 composable Claude skills that turn lecture slides into a full study workflow — milestones, concept checks, worked examples, flashcard decks, practice quizzes, and more. Designed for graduate coursework but adaptable to any subject.
+8 composable Claude skills that turn lecture slides into a full study workflow: milestones, concept checks, worked examples, flashcard decks, practice quizzes, and more. Designed for graduate coursework, adaptable to any subject.
 
 ## What are skills?
 
-Skills are markdown instruction files (`SKILL.md`) that you add to a [Claude Project](https://claude.ai). They teach Claude *how* to perform a specific task with high quality and consistency — like giving it a detailed playbook instead of a vague prompt. Each skill lives in its own folder and can be used independently or chained together.
+Skills are markdown instruction files (`SKILL.md`) that you add to a [Claude Project](https://claude.ai). They teach Claude how to perform a specific task consistently, like giving it a detailed playbook instead of a vague prompt. Each skill lives in its own folder and can be used independently or chained together.
 
 ## The skills
 
@@ -69,7 +69,7 @@ Go to [claude.ai](https://claude.ai) and create a new Project.
 
 ### 2. Add the skills
 
-Upload each `SKILL.md` file as project knowledge. You can add all 8, or just the ones you want:
+Upload each `SKILL.md` file as project knowledge. You can add all 8 or just the ones you want:
 
 - For the full workflow: add all 8 skills
 - For just quizzing: add `concept-check` and/or `practice-quiz`
@@ -77,7 +77,7 @@ Upload each `SKILL.md` file as project knowledge. You can add all 8, or just the
 
 ### 3. Add your course material
 
-Upload your lecture slides (PDFs, PPTXs) and any assigned papers as project knowledge. The skills search this material to generate content grounded in your actual course.
+Upload lecture slides (PDFs, PPTXs) and any assigned papers as project knowledge. The skills search this material to generate content grounded in your actual course.
 
 ### 4. Start studying
 
@@ -92,26 +92,24 @@ Open a new conversation in the project and say something like:
 
 ## Skill design principles
 
-These skills were built around a few ideas that make them work well together:
+All 8 skills search your uploaded course material first. Questions use your course's notation, terminology, and examples, not generic textbook versions.
 
-**Grounded in your material.** Every skill searches your uploaded course content first. Questions use your course's notation, terminology, and examples — not generic textbook versions.
+Each skill does one thing and passes context to the next: milestones define checkpoints → concept-check tests them → worked-examples targets gaps → flashcard-deck covers the full scope → practice-quiz measures readiness.
 
-**Composable.** Each skill does one thing well and passes context to the next. Milestones define checkpoints → concept-check tests those checkpoints → worked-examples targets gaps → flashcard-deck covers the full scope → practice-quiz measures readiness.
+The quiz's "Copy Results for Review" button produces a summary you paste back into Claude. Claude diagnoses misconceptions from your wrong answers and runs targeted remediation, not re-quizzing but teaching.
 
-**Closed-loop.** The practice quiz's "Copy Results for Review" button produces a structured summary that you paste back into Claude. Claude then diagnoses misconceptions from your wrong answers and runs targeted remediation — not re-quizzing, but teaching.
-
-**Adaptive within a session.** The study-session orchestrator tracks what you've done and recommends the next step. It adjusts if you're short on time, want to skip ahead, or need to drill a weak area.
+The study-session orchestrator tracks what you've done and recommends the next step. It adjusts for time constraints, skipping ahead, or drilling a weak area.
 
 ## Customization
 
 Each `SKILL.md` file is self-contained markdown. You can:
 
-- **Edit the question types** in `concept-check` or `practice-quiz` to match your course's exam format
-- **Change the card distribution** in `flashcard-deck` (more application cards, fewer definition cards, etc.)
-- **Adjust the milestone grouping heuristics** in `lecture-milestones` for courses with different lecture structures
-- **Modify the study cycle phases** in `study-session` to match your study habits
+- Edit question types in `concept-check` or `practice-quiz` to match your exam format
+- Change the card distribution in `flashcard-deck` (more application cards, fewer definition cards, etc.)
+- Adjust milestone grouping in `lecture-milestones` for courses with different lecture structures
+- Modify the study cycle phases in `study-session` to match your study habits
 
-The skills are designed to be readable and modifiable — they're instructions, not code.
+The skills are readable and modifiable; they're instructions, not code.
 
 ## File structure
 
