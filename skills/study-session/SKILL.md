@@ -62,7 +62,8 @@ Phase 5: REVIEW
 ```
 
 If an assigned paper is involved, `paper-reader` can slot in anywhere — typically
-before Phase 2 or as a parallel track.
+before Phase 2 or as a parallel track. Follow it with `paper-critique` once the
+learner has read the paper, or when they're preparing for a paper discussion.
 
 ## Workflow
 
@@ -138,6 +139,8 @@ re-explain what each skill does — just execute it. The orchestrator's job is
   plus any prior lecture material in project knowledge
 - When invoking flashcard-deck or practice-quiz: reference the full week's
   milestones and any concept-check gaps
+- When invoking paper-critique after paper-reader: reference the key idea and
+  results from the reading guide so the critique doesn't restate them
 
 ### Step 4: After each skill completes, loop back
 
@@ -249,7 +252,7 @@ Claude responds:
 
 ## Important guidelines
 
-- **Be a coach, not a menu.** Don't list all 7 skills and ask which one they
+- **Be a coach, not a menu.** Don't list all 8 skills and ask which one they
   want. Recommend one specific action based on where they are. The learner
   should feel guided, not overwhelmed by choices.
 - **Track progress conversationally.** You don't have persistent state between
