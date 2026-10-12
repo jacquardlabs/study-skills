@@ -1,6 +1,6 @@
 # Study Skills for Claude Projects
 
-8 composable Claude skills that turn lecture slides into a full study workflow — from breaking lectures into milestones to self-grading practice quizzes. Designed for graduate coursework, adaptable to any subject.
+9 composable Claude skills that turn lecture slides and papers into a full study workflow — from breaking lectures into milestones to self-grading practice quizzes and paper critiques. Designed for graduate coursework, adaptable to any subject.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -31,10 +31,11 @@ Or install this plugin directly:
 ### Via a Claude Project (claude.ai)
 
 1. **Create a Project** at [claude.ai](https://claude.ai).
-2. **Add the skills.** Upload each `SKILL.md` file as project knowledge — all 8, or just the ones you want:
-   - Full workflow: all 8 skills
+2. **Add the skills.** Upload each `SKILL.md` file as project knowledge — all 9, or just the ones you want:
+   - Full workflow: all 9 skills
    - Just quizzing: `concept-check` and/or `practice-quiz`
    - Just study planning: `lecture-milestones` and `study-session`
+   - Just papers: `paper-reader` and `paper-critique` (work without course material)
 3. **Add your course material.** Upload lecture slides (PDFs, PPTXs) and assigned papers as project knowledge. The skills search this material to generate content grounded in your actual course.
 4. **Start studying.** Open a new conversation in the project and say something like:
    - "Study session" — starts the full workflow
@@ -43,6 +44,8 @@ Or install this plugin directly:
    - "Make flashcards for the parsing material"
    - "Walk me through a CKY chart-filling example"
    - "How does this week connect to what we learned before?"
+   - "Help me read this paper"
+   - "Critique this paper — should I trust these results?"
 
 ### The study cycle
 
@@ -68,6 +71,8 @@ Phase 5: REVIEW
   └─ Paste quiz results back into Claude for targeted remediation
 ```
 
+Assigned papers run as a parallel track: `paper-reader` before you read, `paper-critique` after.
+
 You don't have to follow the full cycle every time. "Just quiz me" skips to Phase 4. "I only have 30 minutes" gets a prioritized subset. The orchestrator adapts to what you need.
 
 ## Customization
@@ -91,12 +96,13 @@ The skills are readable and modifiable — they're instructions, not code.
 | **connection-mapper** | Maps how the current week's material connects to prior and upcoming topics (recurring patterns, building blocks, contrasts) | Connection map in chat |
 | **flashcard-deck** | Generates an interactive HTML flashcard deck with flip animations, know-it/still-learning sorting, and CSV export for Anki | Downloadable HTML file |
 | **practice-quiz** | Generates a self-grading HTML quiz with hints, explanations, and a "Copy Results for Review" button that feeds back into Claude | Downloadable HTML file |
-| **paper-reader** | Produces a structured reading guide for an academic paper, tied to the course context | Reading guide in chat |
+| **paper-reader** | Produces a structured reading guide for an academic paper, tied to the course context or, without one, to the field | Reading guide in chat |
+| **paper-critique** | Evaluates a paper's claims against its evidence: claims ledger, threats to validity, reproducibility, scope limits, and production readiness | Critique in chat |
 | **study-session** | Orchestrates the other skills in the right order based on where the learner is in their weekly study cycle | Coaching workflow in chat |
 
 ## How it works
 
-All 8 skills search your uploaded course material first. Questions use your course's notation, terminology, and examples, not generic textbook versions.
+Every skill searches your uploaded course material first. Questions use your course's notation, terminology, and examples, not generic textbook versions. `paper-reader` and `paper-critique` also work on papers read outside a course.
 
 Each skill does one thing and passes context to the next: milestones define checkpoints, concept-check tests them, worked-examples targets gaps, flashcard-deck covers the full scope, and practice-quiz measures readiness.
 
