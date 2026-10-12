@@ -1,16 +1,17 @@
 ---
 name: literature-map
 description: >
-  Synthesizes a set of related papers into a map of how they relate: lineage,
-  shared and conflicting claims, comparable and incomparable results, consensus,
-  and open problems. Use this skill when the user provides or names several
-  papers and asks "how do these papers relate," "compare these papers," "what's
-  the state of the art on X," "literature review on X," "what's the consensus,"
-  "which of these should I read first," "how did this line of work evolve," or
-  asks how a new paper connects to ones they've already read. This skill works
-  across papers — it does not break down a single paper (use paper-reader),
-  critique one in depth (use paper-critique), or plan learning a new topic from
-  scratch (use topic-map).
+  Compares and synthesizes several related papers, methods, or systems into a
+  map of how they relate: lineage, shared and conflicting claims, comparable
+  and incomparable results, consensus, and open problems. Use this skill when
+  the user names or provides two or more papers or methods and asks "how do
+  these relate," "compare these," "what's the difference between X and Y,"
+  "which should I read first," "how did this line of work evolve," "what's the
+  state of the art on X," "literature review on X," or "what's the consensus,"
+  or asks how a new paper connects to ones they've already read. This skill
+  works across papers — it does not break down a single paper (use
+  paper-reader), critique one in depth (use paper-critique), or plan learning a
+  new topic from scratch (use topic-map).
 ---
 
 # Literature Map Skill

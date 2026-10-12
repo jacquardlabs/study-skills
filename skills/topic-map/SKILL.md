@@ -1,16 +1,17 @@
 ---
 name: topic-map
 description: >
-  Builds a learning roadmap for getting up to speed on an unfamiliar topic,
-  field, or research area: prerequisites, core concepts in dependency order,
-  checkpoints, and a reading path from surveys to seminal papers to current
-  work. Use this skill when the user says "get me up to speed on X," "I need to
-  learn X," "where do I start with X," "what should I read to understand X,"
-  "give me a roadmap for X," "what are the prerequisites for X," "break this
-  topic down," or shares slides, chapters, or notes and asks how to work
-  through them. This skill plans the learning — it does not explain a single
-  paper (use paper-reader), compare a set of papers (use literature-map), or
-  test understanding (use understanding-check).
+  Builds a learning roadmap for anyone getting up to speed on an unfamiliar
+  topic, field, technique, or research area — including for a work project.
+  Produces prerequisites, core concepts in dependency order, checkpoints, and a
+  verified reading path from surveys to seminal papers to current work. Use
+  this skill when the user says "get me up to speed on X," "I need to learn X,"
+  "where do I start with X," "what should I read to understand X," "give me a
+  roadmap for X," "what are the prerequisites for X," "break this topic down,"
+  or shares slides, chapters, or notes and asks how to work through them. This
+  skill plans the learning — it does not explain a single paper (use
+  paper-reader), compare a set of papers (use literature-map), or test
+  understanding (use understanding-check).
 ---
 
 # Topic Map Skill

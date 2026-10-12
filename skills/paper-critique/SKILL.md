@@ -1,16 +1,17 @@
 ---
 name: paper-critique
 description: >
-  Critically evaluates an academic paper's claims and evidence. Use this skill
-  when the user uploads or names a research paper and asks to "critique this paper,"
-  "what are the weaknesses," "is this paper any good," "should I trust these
-  results," "poke holes in this," "review this paper," "what are the limitations,"
-  or any request to judge how well a paper's evidence supports its claims. Works
-  standalone or as a follow-up after paper-reader. Also trigger when the user is
-  deciding whether to adopt a paper's method in practice ("would this work in
-  production?"). This skill evaluates a paper — it does not produce a reading
-  guide (use paper-reader), compare several papers (use literature-map), or
-  quiz the user (use understanding-check).
+  Critically evaluates a research paper's claims and evidence — how far to
+  trust its results and why. Use this skill when the user uploads or names a
+  paper and asks to "critique this paper," "poke holes in this," "should I
+  trust these results," "is this paper any good," "what are the weaknesses,"
+  "what are the limitations," "review this paper," or any request to judge how
+  well a paper's evidence supports its claims. Works standalone or as a
+  follow-up after paper-reader. Also trigger when the user is deciding whether
+  to adopt a paper's method in practice ("would this work in production?").
+  This skill evaluates a paper — it does not produce a reading guide (use
+  paper-reader), compare several papers (use literature-map), or quiz the user
+  (use understanding-check).
 ---
 
 # Paper Critique Skill
