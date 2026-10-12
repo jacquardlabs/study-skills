@@ -17,13 +17,6 @@ Via the Jacquard Labs marketplace:
 /plugin install study-skills@jacquardlabs-marketplace
 ```
 
-Or install this plugin directly:
-
-```bash
-/plugin marketplace add jacquardlabs/study-skills
-/plugin install study-skills@study-skills
-```
-
 On claude.ai, zip each folder under `skills/` and upload it as a custom skill from the Skills settings (requires code execution). Custom skills on claude.ai are separate copies — re-upload after updating.
 
 ## Usage
