@@ -61,7 +61,7 @@ Enter anywhere. A single paper starts at `paper-reader`; a pile of papers starts
 
 ## How it works
 
-Each skill grounds its output in the papers and material you provide, and uses web search to find and verify readings. Recommended papers are confirmed to exist or marked unverified.
+Each skill grounds its output in the papers and material you provide. topic-map and literature-map use web search to find readings, and confirm each recommended paper exists or mark it unverified.
 
 Skills hand off to each other: topic-map checkpoints and paper-reader's "3 things you should be able to explain" become understanding-check questions, and paper-critique and literature-map reuse reading guides already in the conversation.
 
